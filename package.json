@@ -6,7 +6,7 @@
     "dev": "concurrently \"npm run backend\" \"next dev\"",
     "backend": "cd backend && node index.js",
     "start": "concurrently \"npm run backend\" \"next dev\"",
-    "test": "jest --runInBand --detectOpenHandles"
+    "test": "jest --verbose --runInBand --detectOpenHandles"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
