@@ -18,12 +18,14 @@ const product = require('./routes/productRoute');
 const order = require('./routes/orderRoute');
 const payment = require('./routes/paymentRoute');
 const note = require('./routes/noteRoute');
+const stakingDashboard = require('./routes/stakingDashboardRoute');
 
 app.use('/api/user', user);
 app.use('/api/product', product);
 app.use('/api/order', order);
 app.use('/api/payment', payment);
 app.use('/api/notes', note);
+app.use('/api/staking-dashboard', stakingDashboard);
 
 // deployment
 __dirname = path.resolve();

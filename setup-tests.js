@@ -1,3 +1,4 @@
 const dotenv = require("dotenv");
+const dotenvExpand = require('dotenv-expand')
 
-dotenv.config({ path: './.env.test' });
+dotenvExpand.expand(dotenv.config({ path: './.env.test' }));
